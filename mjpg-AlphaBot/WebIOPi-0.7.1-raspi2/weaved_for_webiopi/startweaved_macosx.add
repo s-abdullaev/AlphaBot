@@ -1,0 +1,3 @@
+if [ -f "/usr/bin/Weavedwebiopi8000.sh" ]; then
+   /usr/bin/Weavedwebiopi8000.sh start
+fi
