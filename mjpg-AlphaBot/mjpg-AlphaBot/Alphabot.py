@@ -28,22 +28,24 @@ S2=22
 # Setup GPIOs
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(ENA, GPIO.OUT)
+
 GPIO.setup(IN1, GPIO.OUT)
 GPIO.setup(IN2, GPIO.OUT)
-    
-GPIO.setup(ENB, GPIO.OUT)
 GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
+GPIO.setup(ENA, GPIO.OUT)
+GPIO.setup(ENB, GPIO.OUT)
 
 GPIO.setup(S1, GPIO.OUT)
 GPIO.setup(S2, GPIO.OUT)
 
 # set software PWM 
-PENA  = GPIO.PWM(ENA,50)
-PENA.start(100)
-PENB  = GPIO.PWM(ENB,50)
-PENB.start(100)
+PENA  = GPIO.PWM(ENA,500)
+PENB  = GPIO.PWM(ENB,500)
+
+PENA.start(50)
+PENB.start(50)
+
 PS1 = GPIO.PWM(S1,100)
 PS1.start(50)
 PS2 = GPIO.PWM(S2,100)
@@ -120,6 +122,9 @@ def setup():
     GPIO.setup(IN2, GPIO.OUT)
     GPIO.setup(IN3, GPIO.OUT)
     GPIO.setup(IN4, GPIO.OUT)
+    GPIO.setup(ENA, GPIO.OUT)
+    GPIO.setup(ENB, GPIO.OUT)
+
     set_servo1(90)
     set_servo2(90)
 
