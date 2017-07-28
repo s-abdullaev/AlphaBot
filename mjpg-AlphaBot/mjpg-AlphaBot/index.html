@@ -7,32 +7,33 @@
 	<script type="text/javascript" src="/webiopi.js"></script>
 	<script type="text/javascript">
     function init() {
-            var button,TB1,TB1tr,TB1td1,TB1td2,Dfimage,Camera;
+            var TB1,TB1tr,TB1td1,TB1td2,Dfimage,Camera;
+            var btnUp, btnDown, btnLeft, btnRight, btnStop;
     
-            button = webiopi().createButton("bt_up", "/\\", go_forward, stop);
-			button.attr("class", "btn btn-primary");
-			button.onclick=go_forward;
-            $("#up").append(button);
+            btnUp = webiopi().createButton("bt_up", "/\\", go_forward, stop);
+			btnUp.attr("class", "btn btn-primary");
+			btnUp.bind("click", go_forward);
+            $("#up").append(btnUp);
             
-            button = webiopi().createButton("bt_left", "<", turn_left, stop);
-			button.attr("class", "btn btn-primary");
-			button.onclick=turn_left;
-            $("#middle").append(button);
+            btnLeft = webiopi().createButton("bt_left", "<", turn_left, stop);
+			btnLeft.attr("class", "btn btn-primary");
+			btnLeft.bind("click",turn_left);
+            $("#middle").append(btnLeft);
             
-            button = webiopi().createButton("bt_stop", "X", stop);
-			button.attr("class", "btn btn-primary");
-			button.onclick=stop;
-            $("#middle").append(button);
+            btnStop = webiopi().createButton("bt_stop", "X", stop);
+			btnStop.attr("class", "btn btn-primary");
+			btnStop.bind("click", stop);
+            $("#middle").append(btnStop);
             
-            button = webiopi().createButton("bt_right", ">", turn_right, stop);
-			button.attr("class", "btn btn-primary");
-			button.onclick=turn_right;
-            $("#middle").append(button);
+            btnRight = webiopi().createButton("bt_right", ">", turn_right, stop);
+			btnRight.attr("class", "btn btn-primary");
+			btnRight.bind("click", turn_right);
+            $("#middle").append(btnRight);
             
-            button = webiopi().createButton("bt_down", "\\/", go_backward, stop);
-			button.attr("class", "btn btn-primary");
-			button.onclick=go_backward;
-            $("#down").append(button);
+            btnDown = webiopi().createButton("bt_down", "\\/", go_backward, stop);
+			btnDown.attr("class", "btn btn-primary");
+			btnDown.bind("click", go_backward);
+            $("#down").append(btnDown);
 			
 			slider1 = $('<input type="range" min="0.0" max="100.0">');
             slider1.attr("id", "setspeed");
