@@ -21,6 +21,11 @@ IN3=20 # H-Bridge 3
 IN4=21 # H-Bridge 4
 ENB=26 # H-Bridge 3,4EN
 
+
+#Infrared Obstacle Sensors
+DR = 16
+DL = 19
+
 # Servo GPIOs
 S1=27
 S2=22
@@ -35,6 +40,8 @@ GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
 GPIO.setup(ENA, GPIO.OUT)
 GPIO.setup(ENB, GPIO.OUT)
+GPIO.setup(DR,GPIO.IN,GPIO.PUD_UP)
+GPIO.setup(DL,GPIO.IN,GPIO.PUD_UP)
 
 GPIO.setup(S1, GPIO.OUT)
 GPIO.setup(S2, GPIO.OUT)
@@ -86,6 +93,16 @@ def go_forward():
     GPIO.output(IN2, GPIO.LOW)
     GPIO.output(IN3, GPIO.LOW)
     GPIO.output(IN4, GPIO.HIGH)
+    while True:
+        DR_status = GPIO.input(DR)
+        DL_status = GPIO.input(DL)
+        if (DL_status==0) or (DR_status==0):
+            go_backward()
+            time.sleep(0.2)
+            turn_left()
+            time.sleep(0.2)
+            stop()
+            break
 
 @webiopi.macro
 def go_backward():
