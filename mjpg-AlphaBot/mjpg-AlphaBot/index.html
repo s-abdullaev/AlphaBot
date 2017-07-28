@@ -11,22 +11,27 @@
     
             button = webiopi().createButton("bt_up", "/\\", go_forward, stop);
 			button.attr("class", "btn btn-primary");
+			button.onclick=go_forward;
             $("#up").append(button);
             
             button = webiopi().createButton("bt_left", "<", turn_left, stop);
 			button.attr("class", "btn btn-primary");
+			button.onclick=turn_left;
             $("#middle").append(button);
             
             button = webiopi().createButton("bt_stop", "X", stop);
 			button.attr("class", "btn btn-primary");
+			button.onclick=stop;
             $("#middle").append(button);
             
             button = webiopi().createButton("bt_right", ">", turn_right, stop);
 			button.attr("class", "btn btn-primary");
+			button.onclick=turn_right;
             $("#middle").append(button);
             
             button = webiopi().createButton("bt_down", "\\/", go_backward, stop);
 			button.attr("class", "btn btn-primary");
+			button.onclick=go_backward;
             $("#down").append(button);
 			
 			slider1 = $('<input type="range" min="0.0" max="100.0">');
