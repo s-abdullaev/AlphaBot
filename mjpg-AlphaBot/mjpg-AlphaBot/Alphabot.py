@@ -144,12 +144,12 @@ def check_signals():
     DR_status = GPIO.input(DR)
     DL_status = GPIO.input(DL)
     print("left pin %s: %s \t right pin %s: %s" % (DL, DL_status, DR, DR_status))
-    #if ((DL_status==0) or (DR_status==0)):
-    #    go_backward()
-    #    time.sleep(0.2)
-    #    turn_left()
-    #    time.sleep(0.2)
-    #    stop()
+    if ((DL_status==1) or (DR_status==1)):
+       go_backward()
+       time.sleep(0.5)
+       turn_left()
+       time.sleep(0.5)
+       stop()
     Timer(1, check_signals, ()).start()
 
 

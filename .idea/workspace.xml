@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148c1e4f-215b-4cd4-9e07-c0c3028cbd65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/ir_obstacle.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" afterPath="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" />
     </list>
@@ -16,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Alphabot.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Alphabot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="135" column="1" lean-forward="true" selection-start-line="135" selection-start-column="1" selection-end-line="136" selection-end-column="53" />
+            <state relative-caret-position="435">
+              <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding>
                 <element signature="e#104#118#0" expanded="true" />
               </folding>
@@ -28,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ir_obstacle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ir_obstacle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/ir_obstacle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -76,8 +75,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/index.html" />
-        <option value="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" />
         <option value="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/ir_obstacle.py" />
+        <option value="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" />
       </list>
     </option>
   </component>
@@ -414,21 +413,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="135" column="1" lean-forward="true" selection-start-line="135" selection-start-column="1" selection-end-line="136" selection-end-column="53" />
-          <folding>
-            <element signature="e#104#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/ir_obstacle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
