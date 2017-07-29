@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="148c1e4f-215b-4cd4-9e07-c0c3028cbd65" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" afterPath="$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="Alphabot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <element signature="e#104#118#0" expanded="true" />
               </folding>
@@ -40,7 +39,7 @@
       <file leaf-file-name="Infrared_Obstacle_Avoidance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/Infrared_Obstacle_Avoidance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="544">
               <caret line="32" column="21" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -387,7 +386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/Infrared_Obstacle_Avoidance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="544">
           <caret line="32" column="21" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -397,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mjpg-AlphaBot/mjpg-AlphaBot/Alphabot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+        <state relative-caret-position="306">
+          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#104#118#0" expanded="true" />
           </folding>
