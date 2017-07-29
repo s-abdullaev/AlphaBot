@@ -41,8 +41,8 @@ GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
 GPIO.setup(ENA, GPIO.OUT)
 GPIO.setup(ENB, GPIO.OUT)
-GPIO.setup(DR,GPIO.IN,GPIO.PUD_UP)
-GPIO.setup(DL,GPIO.IN,GPIO.PUD_UP)
+GPIO.setup(DR,GPIO.IN,pull_up_down=GPIO.PUD_UP)
+GPIO.setup(DL,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 
 GPIO.setup(S1, GPIO.OUT)
 GPIO.setup(S2, GPIO.OUT)
@@ -133,8 +133,8 @@ def setup():
     GPIO.setup(IN4, GPIO.OUT)
     GPIO.setup(ENA, GPIO.OUT)
     GPIO.setup(ENB, GPIO.OUT)
-    GPIO.setup(DR,GPIO.IN,GPIO.PUD_UP)
-    GPIO.setup(DL,GPIO.IN,GPIO.PUD_UP)
+    GPIO.setup(DR, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+    GPIO.setup(DL, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     set_servo1(90)
     set_servo2(90)
@@ -143,7 +143,7 @@ def setup():
 def check_signals():
     DR_status = GPIO.input(DR)
     DL_status = GPIO.input(DL)
-    print("left: %s \t right: %s" % (DL_status, DR_status))
+    print("left pin %s: %s \t right pin %s: %s" % (DL, DL_status, DR, DR_status))
     #if ((DL_status==0) or (DR_status==0)):
     #    go_backward()
     #    time.sleep(0.2)
