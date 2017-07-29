@@ -59,17 +59,6 @@ PS1.start(50)
 PS2 = GPIO.PWM(S2,100)
 PS2.start(16)
 
-def check_signals():
-    DR_status = GPIO.input(DR)
-    DL_status = GPIO.input(DL)
-    print "left: %s \t right: %s" % (DL_status, DR_status)
-    if ((DL_status==0) or (DR_status==0)):
-        go_backward()
-        time.sleep(0.2)
-        turn_left()
-        time.sleep(0.2)
-        stop()
-    Timer(1, check_signals, ()).start()
 
 
 def interp(range1, range2):
@@ -144,9 +133,24 @@ def setup():
     GPIO.setup(IN4, GPIO.OUT)
     GPIO.setup(ENA, GPIO.OUT)
     GPIO.setup(ENB, GPIO.OUT)
+    GPIO.setup(DR,GPIO.IN,GPIO.PUD_UP)
+    GPIO.setup(DL,GPIO.IN,GPIO.PUD_UP)
 
     set_servo1(90)
     set_servo2(90)
+    check_signals()
+
+def check_signals():
+    DR_status = GPIO.input(DR)
+    DL_status = GPIO.input(DL)
+    print("left: %s \t right: %s" % (DL_status, DR_status))
+    #if ((DL_status==0) or (DR_status==0)):
+    #    go_backward()
+    #    time.sleep(0.2)
+    #    turn_left()
+    #    time.sleep(0.2)
+    #    stop()
+    Timer(1, check_signals, ()).start()
 
 
 # Called by WebIOPi at server shutdown
